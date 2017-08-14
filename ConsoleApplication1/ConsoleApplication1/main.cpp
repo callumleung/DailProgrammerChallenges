@@ -38,7 +38,7 @@ std::string GetInput()
 	std::cout << "Enter text to be encoded: \n";
 
 	std::string UserText = "";
-	std::cin >> UserText;
+	std::getline(std::cin, UserText);
 
 	return UserText;
 
@@ -81,7 +81,7 @@ std::string EncodeString(std::string StartString, std::vector<char> EncodeChars)
 std::string ConsonantTest(char CurrentChar, std::vector<char> EncodeChars)
 {
 	
-	if (std::find(EncodeChars.begin(), EncodeChars.end(), CurrentChar) != EncodeChars.end() )
+	if (std::find(EncodeChars.begin(), EncodeChars.end(), tolower(CurrentChar)) != EncodeChars.end() )
 	{
 		//char found
 		//want to return 3 letter string consisting of char+o+char
