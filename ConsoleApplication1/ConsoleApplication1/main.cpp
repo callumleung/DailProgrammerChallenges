@@ -94,23 +94,38 @@ std::string ConsonantTest(char CurrentChar, std::vector<char> EncodeChars)
 	}
 	else
 	{
-		//char not found
-		//return the char
-
-		//this should work to cast to string but its not for some reason
+		//char was not a consonant w
 		std::string s(1, CurrentChar);
-
-		//alternative casting method
-		//std::stringstream ss;
-		//std::string target;
-		
-		//ss << CurrentChar;
-		//ss >> target;
-
 
 
 		return s;
 	}
+
+
+}
+
+std::string StringDecoder(std::string EncodedString, std::vector<char> EncodeChars)
+{
+
+	std::string DecodedString;
+		
+	for (int i = 0; i < EncodedString.length(); i++)
+	{
+		if ()
+		{
+
+		}
+
+
+
+	}
+	//take in the encoded string in  the rovarspraket language 
+		//compares each char in the string to the vector containing consonants 
+
+			//if a consonant is found the next two characters of the string are removed 
+			//else return the same char
+
+
 
 
 }
